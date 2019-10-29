@@ -1,9 +1,0 @@
-index:
-  handler: src/services/sample/handlers/sample.handler.index
-  events:
-    - http: get /samples
-
-get:
-  handler: src/services/sample/handlers/sample.handler.get
-  events:
-    - http: get /samples/{id}

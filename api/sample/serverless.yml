@@ -1,0 +1,9 @@
+index:
+  handler: api/index.handler
+  events:
+    - http: get /samples
+
+get:
+  handler: api/index.handler
+  events:
+    - http: get /samples/{id}
