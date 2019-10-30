@@ -14,7 +14,7 @@ A simple scaffold serverless application for showing database connection and man
 ```npm install```
 
 - Install serverless CLI
-```npm install -g serverless``
+```npm install -g serverless```
 
 - To run at local:
 ```serverless offline```
