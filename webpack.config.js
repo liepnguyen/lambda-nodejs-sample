@@ -5,6 +5,12 @@ const nodeExternals = require('webpack-node-externals');
 module.exports = {
   entry: slsw.lib.entries,
   target: 'node',
+  resolve: {
+    alias: {
+      models: path.resolve(__dirname, 'models'),
+      db: path.resolve(__dirname, 'db'),
+    }
+  },
   mode: slsw.lib.webpack.isLocal ? 'development': 'production',
   optimization: {
     // We no not want to minimize our code.
